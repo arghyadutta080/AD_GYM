@@ -1,0 +1,359 @@
+* {
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    padding: 0px 12px;
+    color: white;
+
+    top: 0;
+    position: sticky;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    filter: invert(100%);
+    width: 80px;
+    display: block;
+    margin: 3px;
+    padding: 5px;
+    padding-right: 7px;
+}
+
+#navbar ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    list-style: none;
+    justify-content: space-between;
+    border: 2px solid rgb(26, 123, 213);
+    background-color: rgb(9, 142, 213);
+    border-radius: 50px;
+    padding: 15px 25px;
+}
+
+#navbar li {
+    padding: 0px 7px;
+}
+
+#navbar ul a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 7px;
+    padding: 3px;
+    /* border: 1px solid blue; */
+    color: white;
+    font-size: 20px;
+}
+
+#navbar ul a:hover {
+    color: rgb(6, 29, 53);
+}
+
+#navbar ul a:active {
+    color: rgb(6, 29, 53);
+    font-weight: bold;
+}
+
+.btn {
+    margin: 7px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(6, 81, 193);
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bodybtn {
+    display: none;
+}
+
+.btn:hover {
+    background-color: rgb(2, 36, 69);
+    color: rgb(245, 248, 251);
+}
+
+.btn:active {
+    background-color: rgb(77, 165, 213);
+    color: rgb(6, 29, 53);
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 670px;
+    /* border: 2px solid green; */
+    color: rgb(255, 255, 255);
+}
+
+#body1 {
+    width: 45%;
+    text-align: center;
+    margin-left: 9px;
+}
+
+#body1 p {
+    margin-top: 15px;
+}
+
+#body1 h1 {
+    margin: 20px;
+    font-size: 2.3rem;
+}
+
+.submit button {
+    color: black;
+    margin-top: 15px;
+}
+
+#body::before {
+    content: "";
+    background: url('gym_background(2).jpg') no-repeat center center/cover;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    height: 750px;
+    width: 100%;
+    opacity: 1;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    /* border: 2px solid red; */
+    padding-bottom: 25px;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('service background.jpg') no-repeat center center/cover;
+    height: 743px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+#services img {
+    width: 300px;
+}
+
+#services h1 {
+    margin: 15px;
+    font-size: 2.3rem;
+    margin-top: 80px;
+    color: rgb(254, 255, 255);
+}
+
+#program {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gym {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 6px;
+    height: 553px;
+    text-align: center;
+}
+
+.gym h2 {
+    margin-top: 50px;
+    font-size: 1.8rem;
+}
+
+.gym p {
+    padding: 15px;
+    color: aqua;
+}
+
+.gymbtn {
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(6, 81, 193);
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.gymbtn:hover {
+    background-color: rgb(2, 36, 69);
+    color: rgb(245, 248, 251);
+}
+
+.gymbtn:active {
+    background-color: rgb(77, 165, 213);
+    color: rgb(6, 29, 53);
+}
+
+#about {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+#heading {
+    font-size: 2.3rem;
+    margin: 15px;
+    margin-top: 80px;
+}
+
+.aboutweb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 0px 25px;
+}
+
+#location p {
+    margin: 10px 0px;
+}
+
+.aboutweb h2 {
+    margin: 23px;
+    font-size: 1.8rem;
+    color: rgb(0, 136, 255);
+}
+
+.aboutweb li {
+    margin: 10px 0px;
+}
+
+.aboutweb ul {
+    margin-bottom: 20px;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('about background.jpg') no-repeat center center/cover;
+    height: 795px;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    /* border: 2px solid red; */
+}
+
+#fillup form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.details input,
+textarea {
+    width: 500px;
+    padding: 3px;
+    border-radius: 7px;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#fillup {
+    font-size: 18px;
+    /* border: 2px solid green; */
+    margin-bottom: 55px;
+}
+
+#form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: url('contact_background.webp') no-repeat center center/cover;
+    height: 783px;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.details {
+    margin: 7px;
+    padding: 7px;
+}
+
+.details label {
+    margin-bottom: 8px;
+}
+
+#form h1 {
+    font-size: 1.9rem;
+    margin: 13px;
+    margin-top: 80px;
+}
+
+.submit button {
+    width: 70px;
+    margin: 7px;
+    margin-top: 12px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(87, 198, 249);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.submit button:hover {
+    color: rgb(0, 21, 255);
+    background-color: rgb(162, 226, 255);
+    border: 2px solid rgb(162, 226, 255);
+}
+
+.submit button:active {
+    color: white;
+    background-color: rgb(0, 64, 255);
+    border: 2px solid rgb(0, 64, 255);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
