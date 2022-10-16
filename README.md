@@ -1,6 +1,7 @@
-# AD_GYM
-Website category --> landing page
+# AD-GYM
+This is a front-end design of the website of a Local gym. 
+## About this Web Page
+**Website category** --> `Landing Page`
 
-This is a responsive frontend web design of a local gym, created using HTML and CSS only.
+This responsive frontend web design is created using basic web technologies like `HTML` and `CSS` only.
 
-Website deployed link is here --> [click here](https://arghyaduttaadgym.netlify.app/)
